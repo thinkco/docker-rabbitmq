@@ -1,5 +1,7 @@
 # RabbitMQ
 
+![RabbitMQ](branding/logo.png)
+
 Fully loaded RabbitMQ container, pre-configured for convenience. This container is based on the ```rabbitmq:3.7-management``` RabbitMQ official image.
 
 The following protocols are enabled:
