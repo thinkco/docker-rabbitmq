@@ -1,6 +1,6 @@
 # RabbitMQ
 
-![RabbitMQ](https://upload.wikimedia.org/wikipedia/en/thumb/7/71/RabbitMQ_logo.svg/1280px-RabbitMQ_logo.svg.png)
+![RabbitMQ](https://upload.wikimedia.org/wikipedia/en/thumb/7/71/RabbitMQ_logo.svg/800px-RabbitMQ_logo.svg.png)
 
 Fully loaded RabbitMQ container, pre-configured for convenience. This container is based on the ```rabbitmq:3.7-management``` RabbitMQ official image.
 
@@ -100,3 +100,8 @@ RABBITMQ_MANAGEMENT_SSL_VERIFY
 ### Other
 
 Please refer to the official [RabbitMQ Docker Hub](https://hub.docker.com/_/rabbitmq) for more parameters.
+
+---
+Brought to you by Thinkco.de!
+
+![ThinkCode](https://avatars2.githubusercontent.com/u/31565447?s=200) 
