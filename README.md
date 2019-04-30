@@ -29,6 +29,7 @@ The following plugins are enabled:
 * rabbitmq_federation
 * rabbitmq_management_agent
 
+
  ## Usage
 
  Launch:
