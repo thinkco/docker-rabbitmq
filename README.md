@@ -18,16 +18,16 @@ The following protocols are enabled:
 
 The following plugins are enabled:
 * rabbitmq_federation_management
- * rabbitmq_shovel_management
- * rabbitmq_management
- * rabbitmq_web_mqtt
- * rabbitmq_mqtt
- * rabbitmq_web_dispatch
- * rabbitmq_web_stomp
- * rabbitmq_stomp
- * rabbitmq_shovel
- * rabbitmq_federation
- * rabbitmq_management_agent
+* rabbitmq_shovel_management
+* rabbitmq_management
+* rabbitmq_web_mqtt
+* rabbitmq_mqtt
+* rabbitmq_web_dispatch
+* rabbitmq_web_stomp
+* rabbitmq_stomp
+* rabbitmq_shovel
+* rabbitmq_federation
+* rabbitmq_management_agent
 
  ## Usage
 
