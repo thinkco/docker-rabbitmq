@@ -6,15 +6,15 @@ Fully loaded RabbitMQ container, pre-configured for convenience. This container 
 
 The following protocols are enabled:
 
-| Protocol          | Port          |
-| ----------------- | ------------- |
-| mqtt              |   1883        |
-| amqp              |   5672        |
-| clustering        |   25672       |
-| http              |   15672       |
-| http/web-stomp    |   15674       |
-| http/web-mqtt     |   15675       |
-| stomp             |   61613       |
+| Protocol          | Port          | Plugin                |
+| ----------------- | ------------- | --------------------- |
+| mqtt              |   1883        | rabbitmq_mqtt         |
+| amqp              |   5672        | *base system*         |
+| clustering        |   25672       | *base system*         |
+| http              |   15672       | rabbitmq_management   |
+| http/web-stomp    |   15674       | rabbitmq_web_stomp    |
+| http/web-mqtt     |   15675       | rabbitmq_web_mqtt     |
+| stomp             |   61613       | rabbitmq_stomp        |
 
 The following plugins are enabled:
 * rabbitmq_federation_management
