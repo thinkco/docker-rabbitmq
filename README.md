@@ -33,21 +33,24 @@ The following plugins are enabled:
 
  Launch:
  ```docker
- docker run -d --hostname rabbitmq --name rabbitmq -p 15671:15671/tcp -p 15672:15672/tcp -p 15674:15674/tcp -p 15675:15675/tcp -p 1883:1883/tcp -p 25672:25672/tcp -p 4369:4369/tcp -p 5671:5671/tcp -p 5672:5672/tcp -p 61613:61613/tcp thinkcode-rabbitmq:latest
+ docker run -d --hostname rabbitmq --name rabbitmq -p 15671:15671/tcp -p 15672:15672/tcp \
+            -p 15674:15674/tcp -p 15675:15675/tcp -p 1883:1883/tcp -p 25672:25672/tcp \
+            -p 4369:4369/tcp -p 5671:5671/tcp -p 5672:5672/tcp -p 61613:61613/tcp \
+            thinkcode-rabbitmq:latest
 ```
 
 Stop:
-```
+```docker
 docker stop rabbitmq
 ```
 
 Start:
-```
+```docker
 docker start rabbitmq
 ```
 
 Remove:
-```
+```docker
 docker rm rabbitmq
 ```
  ## Environment Variables
@@ -55,27 +58,27 @@ docker rm rabbitmq
  ### Users
 
 The following variables can be set to specify a user+password with administrator permissions:
-```
+```bash
 ENV RABBITMQ_ADMIN_USER
 ENV RABBITMQ_ADMIN_PASSWORD 
 ```
 By detault, this is set to user ```admin``` and password ```adminpass```.
 
 The following varibles can be set to specify a user+password with management permissions (to access the API):
-```
+```bash
 ENV RABBITMQ_API_USER api
 ENV RABBITMQ_API_PASSWORD api
 ```
 By detault, this is set to user ```api``` and password ```apipass```.
 ### Virtual Host Configuration
-```
+```bash
 RABBITMQ_DEFAULT_VHOST
 ```
 
 ### SSL Configuration
 
 For SSL configuration without the management plugin:
-```
+```bash
 RABBITMQ_SSL_CACERTFILE
 RABBITMQ_SSL_CERTFILE
 RABBITMQ_SSL_DEPTH
@@ -85,7 +88,7 @@ RABBITMQ_SSL_VERIFY
 ```
 
 For SSL configuration using the management plugin:
-```
+```bash
 RABBITMQ_MANAGEMENT_SSL_CACERTFILE
 RABBITMQ_MANAGEMENT_SSL_CERTFILE
 RABBITMQ_MANAGEMENT_SSL_DEPTH
