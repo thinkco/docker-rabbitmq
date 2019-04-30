@@ -1,6 +1,6 @@
 # RabbitMQ
 
-![RabbitMQ](branding/logo.png)
+![RabbitMQ](https://upload.wikimedia.org/wikipedia/en/thumb/7/71/RabbitMQ_logo.svg/1280px-RabbitMQ_logo.svg.png)
 
 Fully loaded RabbitMQ container, pre-configured for convenience. This container is based on the ```rabbitmq:3.7-management``` RabbitMQ official image.
 
