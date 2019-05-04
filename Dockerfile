@@ -1,12 +1,12 @@
 FROM rabbitmq:3.7-management
 
+MAINTAINER Carlos Lozano Diez <thinkcode@adaptive.me>
+
 ENV RABBITMQ_ADMIN_USER admin
 ENV RABBITMQ_ADMIN_PASSWORD adminpass
 ENV RABBITMQ_API_USER api
 ENV RABBITMQ_API_PASSWORD apipass
 ENV RABBITMQ_HIPE_COMPILE 1
-
-MAINTAINER Carlos Lozano Diez <thinkcode@adaptive.me>
 
 RUN rabbitmq-plugins enable --offline rabbitmq_management && \
     rabbitmq-plugins enable --offline rabbitmq_mqtt && \
