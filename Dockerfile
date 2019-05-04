@@ -6,6 +6,8 @@ ENV RABBITMQ_API_USER api
 ENV RABBITMQ_API_PASSWORD apipass
 ENV RABBITMQ_HIPE_COMPILE 1
 
+MAINTAINER Carlos Lozano Diez <thinkcode@adaptive.me>
+
 RUN rabbitmq-plugins enable --offline rabbitmq_management && \
     rabbitmq-plugins enable --offline rabbitmq_mqtt && \
     rabbitmq-plugins enable --offline rabbitmq_web_mqtt && \
