@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Create Rabbitmq user
-( sleep 5 ; \
+( echo "Waiting for process to start..."; \
+sleep 30 ; \
 rabbitmqctl add_user $RABBITMQ_ADMIN_USER $RABBITMQ_ADMIN_PASSWORD 2>/dev/null ; \
 rabbitmqctl set_user_tags $RABBITMQ_ADMIN_USER administrator ; \
 rabbitmqctl set_permissions -p / $RABBITMQ_ADMIN_USER  ".*" ".*" ".*" ; \
